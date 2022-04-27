@@ -125,8 +125,8 @@ include "config-frais.php";
           <form action="<?php echo base_url("Back/fraisStatusUpdate");?>"  method="POST">
           <select class="login__submit select" name="categorie_fiche">
             <option> En cours
-            <option> Remboursée
-            <option> Refusée
+            <option> Fiche Remboursée
+            <option> Fiche Refusée
           </select>
           <input type="hidden" name="element_id" value="<?php echo $fetch20['id']; ?>">
           <input class="login__submit" type="submit" value="Sauvegarder"></i>
