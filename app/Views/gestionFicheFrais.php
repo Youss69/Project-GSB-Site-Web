@@ -126,7 +126,7 @@ include "config-frais.php";
           <select class="login__submit select" name="categorie_fiche">
             <option> En cours
             <option> Fiche Remboursée
-            <option> Refusée
+            <option> Fiche Refusée
           </select>
           <input type="hidden" name="element_id" value="<?php echo $fetch20['id']; ?>">
           <input class="login__submit" type="submit" value="Sauvegarder"></i>
