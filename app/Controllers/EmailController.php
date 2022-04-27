@@ -71,10 +71,9 @@ class EmailController extends BaseController
 
         $connexion = GETPDO($config);
 
-        $req_admin = $connexion->query("SELECT mail FROM authentification WHERE categorie_utilisateur = 'Administrateur'");
+        $req_admin = $connexion->query("SELECT DISTINCT mail FROM authentification WHERE categorie_utilisateur = 'Administrateur'");
                
                 $to = $req_admin->fetchAll();
-                
                 $subject = "Code de validation nouvelle inscription";
                 $message = "Bonjour, " . $identifiant_utilisateur ." s'est récemment inscrit, veuillez lui fournir son code de vérification : " . $_SESSION['random'];
                 $header = "Content-Type: text/plain; charset=utf-8\r\n"; // pour prendre en compte tous les caractères de toutes les langues
