@@ -40,7 +40,7 @@
 					left: 0;
 					background-color: #5C5696;
 					overflow-x: hidden;
-					padding-top: 70px;
+					padding-top: 20px;
 
 					box-shadow: 0px 0px 24px white;
 					/* box-shadow: 0px 0px 24px #5C5696; */

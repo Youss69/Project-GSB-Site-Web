@@ -28,9 +28,9 @@ class Back extends BaseController
         }
     }
     function CompteNonActif() {
-        echo "<script> 
-        window.alert ('Votre compte n'est pas active'); 
-        window.location='../index.php'; </sc>";
+        echo "<script type=\"text/javascript\">
+        window.alert ('Identifiant et/ou Mot de passe incorrect'); 
+        window.location='../../index.php'; </script>";
 
 
     }
@@ -129,7 +129,6 @@ class Back extends BaseController
                                 if ($res['Activation3'] == 1) {
                                     $_SESSION['connecté'] = TRUE;
                                     return redirect()->to("/Front/FicheFrais2");
-                                #header('location: http://localhost:3000/app/Views/FicheFrais2.php'); 
                                 }
                                 else {
                                     return redirect()->to("/Back/CompteNonActif");
