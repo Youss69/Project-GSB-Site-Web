@@ -246,18 +246,17 @@ class Back extends BaseController
 
                     $execution = $reponse->query('SELECT `id`, `identifiant` FROM authentification');
 
-                    $execution->execute();
-
                     $fetch = $execution->fetchAll();
 
-                    foreach($fetch as $fetch) {
+                    foreach($fetch as $fetch2) {
 
-                        if ($_SESSION['idd'] === $fetch['identifiant']) {
+                        if ($_SESSION['idd'] === $fetch2['identifiant']) {
                             
-                            $numéro_id = $fetch['id'];
-
+                            $numéro_id = $fetch2['id'];
+                            }
                             
                     }
+                    
 
                     $nombre_km = isset($_POST['nbr_km']) ?$_POST['nbr_km'] : null;
                     $nombre_km = filter_var($nombre_km, FILTER_SANITIZE_STRING);
@@ -274,17 +273,14 @@ class Back extends BaseController
                     $event = isset($_POST['Evènementiel']) ?$_POST['Evènementiel'] : null;
                     $event = filter_var($event, FILTER_SANITIZE_STRING);
 
-                        $frais = GETPDO($config);
                         if (!empty($nombre_km) and !empty($restau) and !empty($htl) and !empty($event))
                         {
 
-                            $insérer = $frais->prepare('INSERT INTO fichefrais (nbr_km, cout_km, restauration, hotel, evenementiel,
-                            id_authentification	) VALUES (? , ? , ? , ? , ?, ?)');
+                        $insérer = $reponse->prepare('INSERT INTO fichefrais (nbr_km, cout_km, restauration, hotel, evenementiel,
+                        id_authentification	) VALUES (? , ? , ? , ? , ?, ?)');
 
                         $resql = $insérer->execute(array($nombre_km, $coutkm, $restau, $htl, $event, $numéro_id));
-                         /*var_dump($insérer->errorInfo());
-
-                        echo "Données retourné"; */
+ 
                         #header('Location: http://localhost:3000/app/Views/FicheFrais2.php');
                         return redirect()->to("/Front/noteDeFrais");
                         /*$data = array('user_idd' => $session->get("idd"), 'connected'=> $session->get("connecté"));
@@ -297,7 +293,7 @@ class Back extends BaseController
                             return view("FicheFrais2.php");
                         }
                         
-                    }
+                    
                 }
 
                 else {
@@ -319,11 +315,15 @@ class Back extends BaseController
             $bd = GETPDO($config);
             $elementId = $this->request->getVar('element_id');
             $categorie_fiche = $this->request->getVar('categorie_fiche');
-            $activation=  $bd->prepare(
+            if ($categorie_fiche != 'En cours') {
+                $activation=  $bd->prepare(
                 'UPDATE `fichefrais` SET `categorie_fiche` = :categorie_fiche WHERE `fichefrais`.`id` = :id');
             $activation->bindValue(':id', $elementId);
             $activation->bindValue(':categorie_fiche', $categorie_fiche);
             $activation->execute();
+            }
+   
+            
         }
         return redirect()->to("/Front/comptable"); 
     }

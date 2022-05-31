@@ -1,0 +1,76 @@
+CRITICAL - 2022-05-31 15:22:38 --> Undefined variable: numéro_id
+#0 C:\wamp64\www\Project-GSB-Site-Web\app\Controllers\Back.php(284): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp64\\www\\P...', 284, Array)
+#1 C:\wamp64\www\Project-GSB-Site-Web\system\CodeIgniter.php(825): App\Controllers\Back->frais()
+#2 C:\wamp64\www\Project-GSB-Site-Web\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Back))
+#3 C:\wamp64\www\Project-GSB-Site-Web\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\Project-GSB-Site-Web\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\Project-GSB-Site-Web\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\P...')
+#6 {main}
+CRITICAL - 2022-05-31 15:31:30 --> Undefined variable: numéro_id
+#0 C:\wamp64\www\Project-GSB-Site-Web\app\Controllers\Back.php(283): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp64\\www\\P...', 283, Array)
+#1 C:\wamp64\www\Project-GSB-Site-Web\system\CodeIgniter.php(825): App\Controllers\Back->frais()
+#2 C:\wamp64\www\Project-GSB-Site-Web\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Back))
+#3 C:\wamp64\www\Project-GSB-Site-Web\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\Project-GSB-Site-Web\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\Project-GSB-Site-Web\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\P...')
+#6 {main}
+CRITICAL - 2022-05-31 15:31:33 --> Undefined variable: user_idd
+#0 C:\wamp64\www\Project-GSB-Site-Web\app\Views\FicheFrais2.php(5): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp64\\www\\P...', 5, Array)
+#1 C:\wamp64\www\Project-GSB-Site-Web\system\View\View.php(210): include('C:\\wamp64\\www\\P...')
+#2 C:\wamp64\www\Project-GSB-Site-Web\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\Project-GSB-Site-Web\system\Common.php(1089): CodeIgniter\View\View->render('FicheFrais2.php', Array, true)
+#4 C:\wamp64\www\Project-GSB-Site-Web\app\Controllers\Back.php(294): view('FicheFrais2.php')
+#5 C:\wamp64\www\Project-GSB-Site-Web\system\CodeIgniter.php(825): App\Controllers\Back->frais()
+#6 C:\wamp64\www\Project-GSB-Site-Web\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Back))
+#7 C:\wamp64\www\Project-GSB-Site-Web\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\Project-GSB-Site-Web\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\Project-GSB-Site-Web\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\P...')
+#10 {main}
+CRITICAL - 2022-05-31 15:31:43 --> Undefined variable: numéro_id
+#0 C:\wamp64\www\Project-GSB-Site-Web\app\Controllers\Back.php(283): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp64\\www\\P...', 283, Array)
+#1 C:\wamp64\www\Project-GSB-Site-Web\system\CodeIgniter.php(825): App\Controllers\Back->frais()
+#2 C:\wamp64\www\Project-GSB-Site-Web\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Back))
+#3 C:\wamp64\www\Project-GSB-Site-Web\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\Project-GSB-Site-Web\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\Project-GSB-Site-Web\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\P...')
+#6 {main}
+CRITICAL - 2022-05-31 15:34:23 --> Undefined variable: numéro_id
+#0 C:\wamp64\www\Project-GSB-Site-Web\app\Controllers\Back.php(282): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp64\\www\\P...', 282, Array)
+#1 C:\wamp64\www\Project-GSB-Site-Web\system\CodeIgniter.php(825): App\Controllers\Back->frais()
+#2 C:\wamp64\www\Project-GSB-Site-Web\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Back))
+#3 C:\wamp64\www\Project-GSB-Site-Web\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\Project-GSB-Site-Web\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\Project-GSB-Site-Web\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\P...')
+#6 {main}
+CRITICAL - 2022-05-31 15:44:04 --> Undefined variable: numéro_id
+#0 C:\wamp64\www\Project-GSB-Site-Web\app\Controllers\Back.php(282): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp64\\www\\P...', 282, Array)
+#1 C:\wamp64\www\Project-GSB-Site-Web\system\CodeIgniter.php(825): App\Controllers\Back->frais()
+#2 C:\wamp64\www\Project-GSB-Site-Web\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Back))
+#3 C:\wamp64\www\Project-GSB-Site-Web\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\Project-GSB-Site-Web\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\Project-GSB-Site-Web\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\P...')
+#6 {main}
+CRITICAL - 2022-05-31 15:44:46 --> Undefined variable: numéro_id
+#0 C:\wamp64\www\Project-GSB-Site-Web\app\Controllers\Back.php(283): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp64\\www\\P...', 283, Array)
+#1 C:\wamp64\www\Project-GSB-Site-Web\system\CodeIgniter.php(825): App\Controllers\Back->frais()
+#2 C:\wamp64\www\Project-GSB-Site-Web\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Back))
+#3 C:\wamp64\www\Project-GSB-Site-Web\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\Project-GSB-Site-Web\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\Project-GSB-Site-Web\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\P...')
+#6 {main}
+CRITICAL - 2022-05-31 15:45:15 --> Undefined variable: numéro_id
+#0 C:\wamp64\www\Project-GSB-Site-Web\app\Controllers\Back.php(282): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp64\\www\\P...', 282, Array)
+#1 C:\wamp64\www\Project-GSB-Site-Web\system\CodeIgniter.php(825): App\Controllers\Back->frais()
+#2 C:\wamp64\www\Project-GSB-Site-Web\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Back))
+#3 C:\wamp64\www\Project-GSB-Site-Web\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\Project-GSB-Site-Web\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\Project-GSB-Site-Web\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\P...')
+#6 {main}
+CRITICAL - 2022-05-31 15:49:01 --> Undefined index: id
+#0 C:\wamp64\www\Project-GSB-Site-Web\app\Controllers\Back.php(255): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp64\\www\\P...', 255, Array)
+#1 C:\wamp64\www\Project-GSB-Site-Web\system\CodeIgniter.php(825): App\Controllers\Back->frais()
+#2 C:\wamp64\www\Project-GSB-Site-Web\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Back))
+#3 C:\wamp64\www\Project-GSB-Site-Web\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\Project-GSB-Site-Web\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\Project-GSB-Site-Web\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\P...')
+#6 {main}
