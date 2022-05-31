@@ -102,7 +102,7 @@ include "fonction-code-validation.php";
         <td><?php echo $fetch20['prenom']; ?></td>
         <td><?php echo $fetch20['mail']; ?></td>
         <td><?php echo $fetch20['categorie_utilisateur']; ?></td>
-        <td><?php echo $code ?></td>
+        <td><?php echo $fetch20['code'] ?></td>
         <td><?php echo $fetch20['Activation3']; ?></td>
         <td>
           <?php switch ($fetch20['Activation3']) {

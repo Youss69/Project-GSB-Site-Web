@@ -123,13 +123,24 @@ include "config-frais.php";
         <td><?php echo $fetch20['id_authentification']; ?></td>
         <td> 
           <form action="<?php echo base_url("Back/fraisStatusUpdate");?>"  method="POST">
-          <select class="login__submit select" name="categorie_fiche">
+          <?php if ($fetch20['categorie_fiche']) { 
+             
+                     echo $fetch20['categorie_fiche'];
+
+          }
+         else { ?>
+           <select class="login__submit select" name="categorie_fiche">
             <option> En cours
             <option> Fiche Remboursée
             <option> Fiche Refusée
           </select>
           <input type="hidden" name="element_id" value="<?php echo $fetch20['id']; ?>">
           <input class="login__submit" type="submit" value="Sauvegarder"></i>
+        <?php } 
+  
+         ?>
+         
+          
           </form>
         </td>
       </tr>
